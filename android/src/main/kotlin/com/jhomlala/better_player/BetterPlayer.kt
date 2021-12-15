@@ -632,7 +632,7 @@ internal class BetterPlayer(
             //    val pos = exoPlayer.currentPosition
             //    return windowStartTimeMs + pos
             //}
-            return exoPlayer.currentPosition
+            return exoPlayer!!.currentPosition
         }
 
     private fun sendInitialized() {
