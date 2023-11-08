@@ -20,7 +20,7 @@ dependencies:
     git:
       url: https://github.com/gsshop-microsvc/wakelock.git
       ref: main
-      path: ../wakelock
+      path: ./wakelock
   pedantic: ^1.11.1
   meta: ^1.7.0
   flutter_widget_from_html_core: 0.10.1
