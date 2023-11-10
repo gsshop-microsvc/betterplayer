@@ -14,14 +14,18 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  cupertino_icons: ^1.0.4
-  wakelock: ^0.6.1+2
+  cupertino_icons: ^1.0.3
+  wakelock: 
+    git:
+      url: https://github.com/gsshop-microsvc/wakelock.git
+      ref: main
+      path: ./wakelock
   meta: ^1.7.0
-  flutter_widget_from_html_core: ^0.8.5+1
-  visibility_detector: ^0.2.2
-  path_provider: ^2.0.9
+  flutter_widget_from_html_core:
+  visibility_detector: 0.3.3
+  path_provider: ^2.0.5
   collection: ^1.15.0
-  xml: ^5.3.0
+  xml: ^6.0.1
 
 dev_dependencies:
   lint: ^1.8.1
