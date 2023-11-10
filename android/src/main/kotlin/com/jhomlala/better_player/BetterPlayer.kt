@@ -567,15 +567,15 @@ internal class BetterPlayer(
 
     val absolutePosition: Long
         get() {
-            val timeline = exoPlayer?.currentTimeline
-            timeline?.let {
-                if (!timeline.isEmpty) {
-                    val windowStartTimeMs =
-                        timeline.getWindow(0, Timeline.Window()).windowStartTimeMs
-                    val pos = exoPlayer?.currentPosition ?: 0L
-                    return windowStartTimeMs + pos
-                }
-            }
+            // val timeline = exoPlayer?.currentTimeline
+            // timeline?.let {
+            //     if (!timeline.isEmpty) {
+            //         val windowStartTimeMs =
+            //             timeline.getWindow(0, Timeline.Window()).windowStartTimeMs
+            //         val pos = exoPlayer?.currentPosition ?: 0L
+            //         return windowStartTimeMs + pos
+            //     }
+            // }
             return exoPlayer?.currentPosition ?: 0L
         }
 
